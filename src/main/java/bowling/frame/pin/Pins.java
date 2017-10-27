@@ -7,6 +7,7 @@ public class Pins {
     private int falledPins;
 
     private Pins(int falledPins) {
+        validPins(falledPins);
         this.falledPins = falledPins;
     }
     
@@ -23,8 +24,6 @@ public class Pins {
     }
 
     public static Pins bowl(int falledPins) {
-        validPins(falledPins);
-        
         return new Pins(falledPins);
     }
       
